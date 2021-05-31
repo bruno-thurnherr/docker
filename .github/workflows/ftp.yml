@@ -14,6 +14,4 @@ jobs:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        localDir: "D:\DockerEnvoirement\dstack\docker\"
-        remoteDir: "/"
         options: "--delete --asci"
