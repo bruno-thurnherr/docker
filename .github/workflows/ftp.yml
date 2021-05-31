@@ -7,12 +7,11 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Upload ftp
-      uses: actions/checkout@v2
-      with:
-        host: sl233.web.hostpoint.ch
-        user: github@modularbeit.ch
-        password: githubABBTS2021
-        localDir: "/"
-        remoteDir: "/"
+uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+with:
+  ftp_host: ${{ secrets.FTP_HOST }}
+  ftp_username: ${{ secrets.FTP_USERNAME }}
+  ftp_password: ${{ secrets.FTP_PASSWORD }}
+  local_source_dir: "dist"
+  dist_target_dir: "/"
+  
