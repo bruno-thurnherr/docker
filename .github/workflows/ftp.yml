@@ -15,4 +15,4 @@ jobs:
         user: github@modularbeit.ch
         password: githubABBTS2021
         localDir: "/"
-        remoteDir: "www"
+        remoteDir: "/"
