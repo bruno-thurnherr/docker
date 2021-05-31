@@ -11,7 +11,7 @@ jobs:
     - name: Upload ftp
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        host: sl233.web.hostpoint.ch
+        user: github@modularbeit.ch
+        password: githubABBTS2021
         options: "--delete --asci"
