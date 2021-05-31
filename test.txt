@@ -1,0 +1,17 @@
+ Datentr„ger in Laufwerk D: ist Volume
+ Volumeseriennummer: 2629-3F2D
+
+ Verzeichnis von D:\DockerEnvoirement\dstack\docker
+
+31.05.2021  20:37    <DIR>          .
+31.05.2021  20:37    <DIR>          ..
+31.05.2021  19:08                29 .gitignore
+30.05.2021  07:29    <DIR>          apache
+30.05.2021  07:43    <DIR>          docker
+30.05.2021  08:03             1'890 docker-compose.yml
+30.05.2021  07:28    <DIR>          mysql
+30.05.2021  07:30    <DIR>          php
+31.05.2021  20:37                 0 test.txt
+30.05.2021  07:47    <DIR>          www
+               3 Datei(en),          1'919 Bytes
+               7 Verzeichnis(se), 182'599'573'504 Bytes frei
