@@ -7,10 +7,13 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        ftp_host: ${{ secrets.FTP_HOST }}
-        ftp_username: ${{ secrets.FTP_USERNAME }}
-        ftp_password: ${{ secrets.FTP_PASSWORD }}
-        local_source_dir: "dist"
-        dist_target_dir: "/"
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "D:\DockerEnvoirement\dstack\docker\"
+        remoteDir: "/"
+        options: "--delete --asci"
