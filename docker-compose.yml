@@ -22,9 +22,9 @@ services:
     container_name: "dstack-mysql"
     image: bitnami/mysql:5.7
     environment:
-      - MYSQL_ROOT_PASSWORD=ROOT-MA
+      - MYSQL_ROOT_PASSWORD=YOUR_PASSWORD_HERE
       - MYSQL_USER=admin
-      - MYSQL_PASSWORD=ADMIN-MA
+      - MYSQL_PASSWORD=YOUR_PASSWORD_HERE
     ports:
       - '3306:3306'
     volumes:
